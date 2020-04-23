@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registrastion Form</title>
+        <link rel="Stylesheet" href="registration.css">
+	<script src="validation.js"></script>
+    </head>
+    <body>
+        <h1> Registration Form</h1>
+        <div class="container">
+            <form name = "student" onsubmit="return validate()" action="mypage.html" method="post">
+                   
+                    <div class="col-20"><label>UserName</label></div>
+                    <div class="col-80"><input type="text" name="uname" placeholder ="Enter your Username"><span>*</span></div>
+		
+                
+                    <div class="col-20"><label>Password (6 or more characters)</label></div>
+                    <div class="col-80"><input type="password" name="pass" placeholder = "Enter your password"><span>*</span></div>
+                
+               
+                    <div class="col-20"><label>First Name:</label></div>
+                    <div class="col-80"><input type = "text" name="fname" placeholder = "Enter your First name"><span>*</span></div>
+               
+                
+                
+                    <div class="col-20"><label>Last Name:</label></div>
+                    <div class="col-80"><input type = "text" name="lname" placeholder = "Enter your Last name"><span>*</span></div>
+                    
+                    <div class="col-20"><label>Age:</label></div>
+                    <div class="col-80"><input type = "number" name="age" placeholder = "Enter your age"><span>*</span></div>
+                    
+                    <div class="col-20"><label>Address:</label></div>
+                    <div class="col-80"><input type = "text" name="addr" placeholder = "Enter your address"><span></span></div>
+                    
+               
+                
+                
+		    <div class="gender">
+			<label>Gender:</label>
+        	            <input class="g-radio" type="radio" name="gender" value="male">
+				<label>Male</label>
+
+			    <input class="g-radio" type="radio" name="gender" value="female">
+				<label>Female</label>
+				 
+			    <input c;ass="g-radio" type="radio" name="gender" value="female">
+				<label>Others</label>
+			    <span>*</span>
+                   </div>
+                
+                
+                    <div class="col-20"><label>Email:</label></div>
+                    <div class="col-80"><input type = "email" name="email" placeholder = "Enter your Email Id."><span>*</span></div>
+                
+                    <div class="col-20"><label>Subject:</label><span></span></div>
+                    <div class="subject">
+			<input type = "checkbox"  name = "subject" value="Maths">
+                    	<label>Maths</label>
+			<br>
+                    	<input type = "checkbox" name = "subject" value="Science">
+                    	<label>Science</label>
+			<br>
+                    	<input type = "checkbox" name = "subject" value="English">
+                    	<label>English</label>
+			<br>
+		    </div>
+
+			          
+                    
+		    <div class="col-20"><label>Course:</label></div>
+                    <div class="col-80"><select name="course">
+			<option>Select Class</option>
+                        <option>FE</option>
+                        <option>SE</option>
+                        <option>TE</option>
+                        <option>BE</option>
+                        </select>
+			<span>*</span>
+                    </div>
+		    <div class="col-20"><label>Department:</label></div>
+                    <div class="col-80"><select name="dept">
+			<option>Select Department</option>
+                        <option>Computer</option>
+                        <option>IT</option>
+                        <option>Mechanical</option>
+                        <option>Electrical</option>
+			<option>ENTC</option>
+                        </select>
+			<span>*</span>
+                    </div>
+               
+                    <div class="col-20" ><label for="mno">Mobile No: (With country code)</label><span>*</span></div>
+                    <div class="col-80"><input type = "text" name = "pnumber" placeholder = "Enter your Mobile Number" id ="mno"><span>*</span></div>
+                    <div class="col-20" ><input type ="submit" value ="Submit">
+			<br>
+                     	<input type ="reset" value ="Reset">
+                    </div>
+            </form>
+      </body>
+</html>
+       
+      
